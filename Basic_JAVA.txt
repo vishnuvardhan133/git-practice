@@ -1,0 +1,55 @@
+package Programs;
+
+import java.util.Scanner;
+
+public class Vowel {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter word");
+		char c = scanner.next().charAt(0);
+
+		c = Character.toLowerCase(c);
+		switch (c) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+
+			System.out.println("vowel");
+			break;
+		default:
+			System.out.println("constant");
+		}
+
+		/*
+		 * boolean res1 = vowel_switch_case(c); if (res1) { System.out.println("vowel");
+		 * } else { System.out.println("consonant"); } boolean result = vowel(c); if
+		 * (result) { System.out.println("vowel"); } else {
+		 * System.out.println("consonant"); } verify_vowel(); }
+		 * 
+		 * public static boolean vowel(char c) { if (c == 'a' || c == 'e' || c == 'i' ||
+		 * c == 'o' || c == 'u') { return true; } else return false; }
+		 * 
+		 * public static boolean vowel_switch_case(char c) { switch (c) { case 'a':
+		 * return true;
+		 * 
+		 * case 'e': return true;
+		 * 
+		 * case 'i': return true;
+		 * 
+		 * case 'o': return true;
+		 * 
+		 * case 'u': return true;
+		 * 
+		 * default: return false;
+		 * 
+		 * } }
+		 * 
+		 * public static void verify_vowel() { Scanner scanner = new Scanner(System.in);
+		 * String v = scanner.nextLine(); boolean result = v.matches(".*[aeiou].*"); if
+		 * (result) { System.out.println("vowel"); } else {
+		 * System.out.println("consonant"); }
+		 */
+	}
+}
